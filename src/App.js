@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import Design from './Component/Main/design';
-import  './Component/Main/design.css';
+import Design from './Component/Product/design';
+import  './Component/Product/design.css';
 
 function App() {
   return (
