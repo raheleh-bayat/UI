@@ -1,18 +1,17 @@
-import { current } from "@reduxjs/toolkit";
 import { useState } from "react";
-const Header = () => {
-  const[show , setShow]=useState(false);
+import Container from'./container'
 
-  const handlerhedear=()=>{
-    
-  }
+const Header = () => {
+  const [basicModal, setBasicModal] = useState(false);
+  const showtoggle=()=>{setBasicModal(true)};
   return (
     <div>
       <div className="header">
-        <button type="button" className="btn-add" onClick={handlerhedear}>
+        <button type="button" className="btn-add" onClick={showtoggle}>
           +Add Room
         </button>
       </div>
+      {basicModal && <Container closeModal={setBasicModal}/>}
     </div>
   );
 };

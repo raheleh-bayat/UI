@@ -1,23 +1,21 @@
 import { useState } from "react";
 import { Filter } from "react-bootstrap-icons";
 import Index from "./index";
+import Modal from 'react-bootstrap/Modal';
+import Header from "./header";
 
-const Container =()=>{
+
+const Container =({closeModal})=>{
   const[count ,setCount]=useState(0);
   const[counter,setCounter]=useState(0);
-  const[room,setRoom]=useState()
-  
-   
-     
-   
-      
  
   return(
     <div>
       <div className="container">
         <div className="container-child">
           <div className="container-child-a">
-          <i className="bi bi-x-lg " onClick={()=>{setCounter(Filter())}}></i>
+          <div className="container-first-btn" onClick={()=>{closeModal(false)}} >
+            <i className="bi bi-x-lg " ></i>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -28,6 +26,7 @@ const Container =()=>{
             >
               <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
             </svg>
+            </div>
           </div>
         </div>
         <div className="container-first-div">
