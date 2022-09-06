@@ -3,15 +3,17 @@ import Container from'./container'
 
 const Header = () => {
   const [basicModal, setBasicModal] = useState(false);
-  const showtoggle=()=>{setBasicModal(true)};
+  // const showtoggle=()=>{setBasicModal(true)};
   return (
     <div>
+      {basicModal && <Container closeModal={setBasicModal}/>}
+
       <div className="header">
-        <button type="button" className="btn-add" onClick={showtoggle}>
+        <button  className="btn-add" onClick={()=>{setBasicModal(true)}}>
           +Add Room
         </button>
       </div>
-      {basicModal && <Container closeModal={setBasicModal}/>}
+      
     </div>
   );
 };

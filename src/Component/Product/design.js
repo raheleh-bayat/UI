@@ -12,8 +12,8 @@ const Design = () => {
     <div>
      <Header/>
      {/* <Container/> */}
-     <Index/>
      <Footbar/>
+     
     </div>
   );
 };

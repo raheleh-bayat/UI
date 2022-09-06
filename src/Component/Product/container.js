@@ -1,16 +1,33 @@
+
+import React from 'react'
 import { useState } from "react";
-import { Filter } from "react-bootstrap-icons";
 import Index from "./index";
-import Modal from 'react-bootstrap/Modal';
-import Header from "./header";
 
 
 const Container =({closeModal})=>{
+
+
   const[count ,setCount]=useState(0);
   const[counter,setCounter]=useState(0);
+  const[children , setChildren]=useState(0);
+  const[addchildren , setAddChildren]=useState(false);
+
+  function showproduct(){
+    setCounter(counter+1)
+    add();
+  }
+  function add(){
+    let k = []
+    for(let i =0 ; i < 5 ; i++){
+      k.push(<Index data={add}/>)
+    }
+    return k
+  }
+
+ 
+
  
   return(
-    <div>
       <div className="container">
         <div className="container-child">
           <div className="container-child-a">
@@ -38,18 +55,21 @@ const Container =({closeModal})=>{
           <div className="container-children-div">
             <button className="container-btn" onClick={()=>{setCount(count-1)}}>-</button>
             <p className="container-p">{count}</p>
-            <button className="container-btn" onClick={()=>{ setCount(count+1)}}>+</button>
+            <button className="container-btn" onClick={()=>{setCount(count+1)}}>+</button>
           </div>
-
+          
           <div className="container-second-children-div">
             <button className="container-btn" onClick={()=>{setCounter(counter-1)}}>-</button>
             <p className="container-p">{counter}</p>
-            <button className="container-btn" onClick={()=>{ setCounter(counter+1)}}>+</button>
+            <button className="container-btn" onClick={showproduct}>+</button>
           </div>
+          
+        </div>
+        <div>
+        { add() }
         </div>
       </div>
-    </div>
-
+      
   )
 
 }
