@@ -1,8 +1,10 @@
 import { useState } from "react";
 import Container from'./container'
+import Footbar from "./footbar";
 
 const Header = () => {
   const [basicModal, setBasicModal] = useState(false);
+  
   // const showtoggle=()=>{setBasicModal(true)};
   return (
     <div>
@@ -12,6 +14,7 @@ const Header = () => {
         <button  className="btn-add" onClick={()=>{setBasicModal(true)}}>
           +Add Room
         </button>
+        { basicModal && <Footbar/>}
       </div>
       
     </div>

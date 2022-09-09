@@ -6,27 +6,25 @@ import Index from "./index";
 
 const Container =({closeModal})=>{
 
-
   const[count ,setCount]=useState(0);
   const[counter,setCounter]=useState(0);
   const[children , setChildren]=useState(0);
   const[addchildren , setAddChildren]=useState(false);
 
+
   function showproduct(){
     setCounter(counter+1)
-    add();
+    add()
   }
+  
+  let k = []
   function add(){
-    let k = []
-    for(let i =0 ; i < 5 ; i++){
-      k.push(<Index data={add}/>)
+    for(let i = 0 ; i < counter ; i++){
+      k.push(<Index  data={add}/>)
     }
     return k
   }
-
- 
-
- 
+  
   return(
       <div className="container">
         <div className="container-child">
@@ -66,7 +64,7 @@ const Container =({closeModal})=>{
           
         </div>
         <div>
-        { add() }
+         {add()} 
         </div>
       </div>
       

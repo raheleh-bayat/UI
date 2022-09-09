@@ -1,25 +1,21 @@
 .header{
-    width: 100%;
-    /* height: 100vh; */
-    /* border: 1px solid lightblue; */
+    max-width: 100%;
+    border-radius: 5px;
 }
 .container{
     max-width: 100%;
-    height: 600px;
+    height: 300px;
     margin-left: 0;
     margin-right: 0;
-    /* border: 1px solid lightblue; */
-    /* border-bottom: 1px solid lightblue; */
     position: relative;
-    /* display: none; */
-    margin-bottom: 0;
 }
 .footbar{
  max-width: 100%;
  height: 45px;
  border: 1px solid lightblue;
- margin-top: 30px;
+ margin-top: 10px;
  border-radius: 5px;
+ 
  
  /* display: none; */
 }
@@ -44,7 +40,7 @@
 }
 .container-first-div{
     width: 200px;
-    height: 100vh;
+    /* height: 100vh; */
     position: absolute;
     left: 0;
 }
@@ -88,12 +84,11 @@
     height: 5vh;
     margin-top: 15px;
 }
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:400px) {
   .header, .footbar {
     width: 100%;
-    margin-left: 10px;
- margin-right: 10px; 
-  }
+
+      }
 }
   .container-third-div{
     width: 100%;
@@ -116,16 +111,17 @@
   .container-icon{
     margin-inline: 2px;
     color: red;
-    
-    /* margin-left: 10px; */
     font-weight: 500;
-    
+    margin-left: -20px;
+    margin-bottom: 3px;
+    font: bold;
   }
   .div-option{
     border-radius: 5px;
     width: 80px;
-    height: 30px;
+    height: 28px;
     border: 1px solid lightblue;
+    margin-right: 30px;
   }
   .container-first-btn{
     width: 30px;
