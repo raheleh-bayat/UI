@@ -3,6 +3,7 @@ const Footbar = () => {
   
   return (
     <div className="footbar">
+      <div>+AddRoom</div>
       <div>
         <i className="bi bi-search"></i>
         <svg

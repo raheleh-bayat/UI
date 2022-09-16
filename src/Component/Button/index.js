@@ -1,15 +1,17 @@
 import { useState } from "react";
-import Container from "../Container";
-import './button.css'
+import Container from "../Room ";
+import './button.style.js'
+import {ButtonAdd} from "./button.style"
 const Button = () => {
     const [basicModal, setBasicModal] = useState(false);
 
     return(
         <div>
              {basicModal && <Container closeModal={setBasicModal}/>}
-        <button  className="btn-add" onClick={()=>{setBasicModal(true)} }>
+        <ButtonAdd  onClick={()=>{setBasicModal(true)} }>
           +Add Room
-        </button>
+        </ButtonAdd>
+
         </div>
     )
 }
