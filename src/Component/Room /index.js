@@ -17,9 +17,11 @@ import {
   HeaderSVG
 } from './room.style.js'
 
-const Container = ({ closeModal }) => {
+const Container = ({ closeModal}) => {
   const [adultCount, setAdultCount] = useState(1);
   const [children, setChildren] = useState([]);
+  const[addfooter,Setaddfooter]=useState(false);
+
 
   function addChildren() {
     setChildren((children) => [...children, { id: children.length + 1 }]);
@@ -86,8 +88,10 @@ const Container = ({ closeModal }) => {
       {children.map((item) => {
         return <Index number={item.id} onDelete={() => deleteItem(item.id)} />;
       })}
-      
-    </Wrrap>
+     
+      { addfooter && <Footer/>}
+      <Footer/>
+      </Wrrap>
    
    
   );

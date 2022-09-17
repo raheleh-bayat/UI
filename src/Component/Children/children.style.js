@@ -21,7 +21,7 @@ export const WrrapSelect = styled.select`
   display: flex;
   justify-items: right;
   align-items: center;
-  margin-left: 1140px;
+  margin-left: 1167px;
 `;
 export const WrrapIcon = styled.i`
   color: #d83b3b;

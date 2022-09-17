@@ -7,11 +7,11 @@ const Button = () => {
 
     return(
         <div>
-             {basicModal && <Container closeModal={setBasicModal}/>}
-        <ButtonAdd  onClick={()=>{setBasicModal(true)} }>
+        {!basicModal ?  <ButtonAdd  backgrounColor= "#eff2f6" onClick={()=>{setBasicModal(true)} }>
           +Add Room
-        </ButtonAdd>
-
+        </ButtonAdd> : ""}
+       
+        {basicModal && <Container closeModal={setBasicModal}/>}
         </div>
     )
 }

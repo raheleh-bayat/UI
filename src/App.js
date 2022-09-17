@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import 'react-bootstrap-buttons/dist/react-bootstrap-buttons.css';
 import Button from "./Component/Button/index"
-
+import Footer from './Component/Footer/index'
 
 
 function App() {
