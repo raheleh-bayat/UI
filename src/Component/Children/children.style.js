@@ -4,6 +4,11 @@ export const Wrrap = styled.div`
   height: 60px;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 1200px) and (min-width : 760px)
+{
+  margin-left: 40px;
+  padding-left: 40px;
+}
 `;
 export const WrrapP = styled.p`
   display: flex;
@@ -21,7 +26,11 @@ export const WrrapSelect = styled.select`
   display: flex;
   justify-items: right;
   align-items: center;
-  margin-left: 1167px;
+  margin-left: 1125px;
+  @media screen and (max-width: 1200px) and (min-width : 760px)
+{
+  margin-left: 495px;
+}
 `;
 export const WrrapIcon = styled.i`
   color: #d83b3b;

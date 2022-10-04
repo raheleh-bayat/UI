@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 import {
   Wrrap,
@@ -10,12 +11,19 @@ import {
 } from './children.style.js'
 
 const Index = ({ number, onDelete }) => {
+
+  const [getValue , setGetValue] = useState([{value : ""}]);
+
+  const getData = (ev) =>{
+    setGetValue((getValue) => [...getValue] , {value: ev.target.value});
+  }
+  console.log(getData);
   
   return (
       <Wrrap>
         <WrrapP>Children {number} age</WrrapP>
         <WrrapDiv>
-        <WrrapSelect>
+        <WrrapSelect value={getValue.value}>
           <option value="0">0</option>
           <option value="8">8</option>
           <option value="9">9</option>

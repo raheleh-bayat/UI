@@ -1,18 +1,19 @@
-import { useState } from "react";
-import Container from "../Room ";
-import './button.style.js'
-import {ButtonAdd} from "./button.style"
-const Button = () => {
-    const [basicModal, setBasicModal] = useState(false);
+import "./button.style.js";
+import { ButtonAdd , Wrrap} from "./button.style";
 
-    return(
-        <div>
-        {!basicModal ?  <ButtonAdd  backgrounColor= "#eff2f6" onClick={()=>{setBasicModal(true)} }>
-          +Add Room
-        </ButtonAdd> : ""}
-       
-        {basicModal && <Container closeModal={setBasicModal}/>}
-        </div>
-    )
-}
+const Button = (props) => {
+  return (
+    <Wrrap>
+      <ButtonAdd
+        backgrounColor="#eff2f6"
+        Color=" rgb(12, 99, 250)"
+        onClick={() => {
+          props.onClick();
+        }}
+      >
+        {props.text}
+      </ButtonAdd> 
+    </Wrrap>
+  );
+};
 export default Button;
