@@ -1,11 +1,11 @@
 import Button from "../../Button/index";
 import { Search } from "./search";
-const Footer = ({addRoom}) => {
+const Footer = ({addRoom, totalCounter}) => {
 
   return (
     <div>
       <Button text="+Add Room" Color="blue" marginTop="20px" onClick={() => addRoom()}/>
-      <Search/>
+      <Search totalCounter={totalCounter}/>
     </div>
   );
 };

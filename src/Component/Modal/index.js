@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import { Room } from "../Room";
 import Footer from "./Footer/footer";
 import "./modal.style.js";
-
 import { Wrrap, Header, HeaderP, HeaderSVG } from "./modal.style.js";
 
 const Modal = ({ closeModal}) => {
-  const [roomList, setRoomList] = useState([{ id: 1, adult: 1, children: 0 }]);
+  const [roomList, setRoomList] = useState([{ id: 1, adult: 1, children: 0}]);
   const addRoom = ()=>{
     setRoomList((roomList) => [...roomList,{ id : roomList.length + 1}])
   };
@@ -38,7 +37,7 @@ const Modal = ({ closeModal}) => {
       {roomList.map((item) => {
         return <Room key={item.id}  KID={item.id}  RemoveProduct={()=>{DeleteRoom(item.id)}} />;
       })}
-      <Footer addRoom={addRoom}/>
+      <Footer addRoom={addRoom}  totalCounter={roomList.filter(item => item.value > 0).length}/>
     </Wrrap>
   );
 };

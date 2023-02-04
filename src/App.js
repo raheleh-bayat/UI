@@ -1,12 +1,8 @@
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import React from "react";
 import "react-bootstrap-buttons/dist/react-bootstrap-buttons.css";
 import Button from "./Component/Button/index";
 import { useState } from "react";
 import Modal  from "./Component/Modal";
-import "./Component/Style/style.css"
-import { Container }  from "./Component/Container/index";
 function App() {
   const [basicModal, setBasicModal] = useState(false);
   return (
@@ -23,6 +19,7 @@ function App() {
    
     {/* <List/> */}
     {/* <Container/> */}
+  
     </div>
   );
 }

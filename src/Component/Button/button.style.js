@@ -8,13 +8,13 @@ export const ButtonAdd = styled.button`
   border-radius: 7px;
   color: ${(props) => props.Color};
   margin-top: ${(props) => props.marginTop};
-  margin-left: 0px;
-  margin-right: 0px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
   font-family: rial, Helvetica, sans-serif;
 `;
 
 export const Wrrap = styled.div`
-@media screen and (max-width: 1220px) and (min-width : 760px)
+@media all and (min-width : 760px)
 {
   background: black;
 }

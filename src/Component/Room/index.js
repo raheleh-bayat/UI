@@ -17,7 +17,6 @@ import {
 export const Room = ({RemoveProduct, KID}) => {
   const [adultCount, setAdultCount] = useState(1);
   const [children, setChildren] = useState([]);
-  const [deleteRoom,setdeleteRoom]=useState([]);
 
   function addChildren() {
     setChildren((children) => [...children, { id: children.length + 1 }]);

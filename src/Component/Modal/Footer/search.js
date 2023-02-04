@@ -5,10 +5,10 @@ import {
   FooterIcon,
 } from "./footer.style";
 
-export const Search = ({getnumber}) => {
+export const Search = (props) => {
   return (
     <ButtonAdd backgrounColor="blue"  Color="white"  marginTop="20px">
-      rooms {getnumber} gueset
+      {props.totalCounter} rooms gueset
       <Inner>
         <FooterIcon className="bi bi-search"></FooterIcon>
         <FooterSearch

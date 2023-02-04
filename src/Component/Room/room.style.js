@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const Wrrap = styled.div`
-border-bottom: 1px solid lightgray;
-margin-left: 20px;
-margin-right: 20px;
-margin-bottom: 20px;
-  @media screen and (max-width: 1200px) and (min-width : 760px)
-{
-}
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid lightgray;
+   margin-left: 20px;
+  margin-right: 20px; 
+  margin-bottom: 20px;
 `;
 export const Header = styled.div`
   max-width: 100%;
@@ -22,6 +21,8 @@ export const ContainerRoomp = styled.p`
   padding-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 10px;
+  font-weight: 600;
+  font-size: 18px;
 `;
 export const ContainerFirstp = styled.p`
   display: flex;
@@ -29,6 +30,8 @@ export const ContainerFirstp = styled.p`
   padding-top: 15px;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 10px;
+  font-weight: 600;
+  font-size: 18px;
 `;
 export const ContainerSecondp = styled.p`
   display: flex;
@@ -36,6 +39,8 @@ export const ContainerSecondp = styled.p`
   padding-top: 25px;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 10px;
+  font-weight: 600;
+  font-size: 18px;
 `;
 
 export const ContainerFirstDiv = styled.div`
@@ -59,11 +64,15 @@ export const ContainerButton = styled.button`
   margin-inline: 20px;
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600px;
+  @media all and(min-width: 760px) {
+  }
 `;
 export const ContainerP = styled.p`
   margin-top: 10px;
   padding: 5px;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600px;
 `;
 export const ContainerFirstButton = styled.button`
   width: 30px;
@@ -77,6 +86,7 @@ export const HeaderP = styled.p`
   justify-content: center;
   margin-top: -18px;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600px;
 `;
 export const HeaderSVG = styled.svg`
   display: flex;
