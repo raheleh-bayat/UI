@@ -38,9 +38,4 @@ This will create a build directory with the optimized production version of the 
 ## Author
 Raheleh bayat
 
-## Acknowledgments
-
-- Inspiration from [example website or source]
-- Real-time updates using [example library or source]
-
 
